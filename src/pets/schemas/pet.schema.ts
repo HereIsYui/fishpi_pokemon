@@ -1,22 +1,19 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
+import { Document } from "mongoose";
 
 export type PetDocument = Pet & Document;
 
 export enum PetType {
-  CAT = 'cat',
-  DOG = 'dog',
-  BIRD = 'bird',
-  FISH = 'fish',
-  RABBIT = 'rabbit',
+  FISH = "fish",
+  CAT = "cat",
 }
 
 export enum PetStatus {
-  ACTIVE = 'active',
-  SLEEPING = 'sleeping',
-  SICK = 'sick',
-  HAPPY = 'happy',
-  HUNGRY = 'hungry',
+  ACTIVE = "active",
+  SLEEPING = "sleeping",
+  SICK = "sick",
+  HAPPY = "happy",
+  HUNGRY = "hungry",
 }
 
 @Schema({ timestamps: true })
