@@ -1,0 +1,21 @@
+{
+  "database": {
+    "mongodb": {
+      "uri": "mongodb://xxx:pwd@127.0.0.1:27017/xxx"
+    }
+  },
+  "server": {
+    "port": 3000,
+    "nodeEnv": "development",
+    "cors": {
+      "origin": true,
+      "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+      "credentials": true
+    },
+    "validation": {
+      "whitelist": true,
+      "transform": true,
+      "forbidNonWhitelisted": true
+    }
+  }
+}
